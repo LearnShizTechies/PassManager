@@ -1,0 +1,27 @@
+{
+  "name": "passmanager",
+  "version": "1.0.0",
+  "description": "Open Source Password Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LearnShizTechies/PassManager.git"
+  },
+  "keywords": [
+    "password",
+    "manager"
+  ],
+  "author": "Adarsh Learner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LearnShizTechies/PassManager/issues"
+  },
+  "homepage": "https://github.com/LearnShizTechies/PassManager#readme",
+  "dependencies": {
+    "create-react-app": "^3.1.1",
+    "express": "^4.17.1"
+  }
+}
