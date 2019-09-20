@@ -1,11 +1,10 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 5000;
-
-// console.log that your server is up and running
-app.listen(port, () => console.log(`Listening on port ${port}`));
-
-// create a GET route
-app.get('/express_backend', (req, res) => {
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
-});
+import express from "express";
+import http from "http";
+import app from "./app";
+ 
+//Use system configuration for port or use 6001 by default.
+const port = process.env.port || 5000;
+ 
+//Create server with exported express app
+const server = http.createServer(app);
+server.listen(port, () => console.log("Its up on"+ port));
